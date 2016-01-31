@@ -11,7 +11,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class BlackBoxTest_UserCase_01 {
-	private static final String settingsDir = "V:\\Data\\Development\\SDET\\SDET Education\\CMU\\TeamProjects\\Sources\\Data Stores";
+	private static final String settingsDir = "D:\\Tmp";
 	private LoginHandler loginHandler;
 	private IoTControlManager controller;
 
