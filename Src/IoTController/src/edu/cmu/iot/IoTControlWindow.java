@@ -89,7 +89,7 @@ public class IoTControlWindow extends JFrame {
     public IoTControlWindow(String settingsDir) throws HeadlessException {
         super("Tartan Platform");
 
-        //$$$setupUI$$$();
+        $$$setupUI$$$();
         setContentPane(mainPanel);
         pack();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
