@@ -75,170 +75,101 @@ public class BlackBoxTest_UserCase_01 {
 	}
 
 	@Test
-	public void testTC_01() {
+	public void testTC_01() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 01");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMatchUserId(), getMatchUserPassword());
-			assertTrue(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMatchUserId(), getMatchUserPassword());
+		assertTrue(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_02() {
+	public void testTC_02() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 01");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getMatchUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getMatchUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_03() {
+	public void testTC_03() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 03");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMatchUserId(), getNumberMismatchUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMatchUserId(), getNumberMismatchUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_04() {
+	public void testTC_04() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 03");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getNumberMismatchUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getNumberMismatchUserPassword());
+		assertFalse(isLogin);
 	}
 
 	@Test
-	public void testTC_05() {
+	public void testTC_05() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 05");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMatchUserId(), getCaseMismatchUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMatchUserId(), getCaseMismatchUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_06() {
+	public void testTC_06() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 06");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getCaseMismatchUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getCaseMismatchUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_07() {
+	public void testTC_07() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 07");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMatchUserId(), getSymbolMismatchUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMatchUserId(), getSymbolMismatchUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_08() {
+	public void testTC_08() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 08");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getSymbolMismatchUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getSymbolMismatchUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_09() {
+	public void testTC_09() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 07");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMatchUserId(), getFirstCharMismatchhUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMatchUserId(), getFirstCharMismatchhUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_10() {
+	public void testTC_10() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 08");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getFirstCharMismatchhUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getFirstCharMismatchhUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_11() {
+	public void testTC_11() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 11");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMatchUserId(), getLastCharMismatchhUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMatchUserId(), getLastCharMismatchhUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_12() {
+	public void testTC_12() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 12");
 
-		try {
-			boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getLastCharMismatchhUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getLastCharMismatchhUserPassword());
+		assertFalse(isLogin);
 	}
-	
+
 	@Test
-	public void testTC_13() {
+	public void testTC_13() throws LoginAttemptsExceededException {
 		System.out.println("Start Test Case 13");
-
-		try {
-			boolean isLogin = loginHandler.authenticate(getMatchUserId(), getOverOneCharMismatchhUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+		boolean isLogin = loginHandler.authenticate(getMatchUserId(), getOverOneCharMismatchhUserPassword());
+		assertFalse(isLogin);
 	}
-	
-	@Test
-	public void testTC_14() {
-		System.out.println("Start Test Case 14");
 
-		try {
-			boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getOverOneCharMismatchhUserPassword());
-			assertFalse(isLogin);
-		} catch (LoginAttemptsExceededException e) {
-			fail("Occure a Exception - " + e.getMessage());
-		}
+	@Test
+	public void testTC_14() throws LoginAttemptsExceededException {
+		System.out.println("Start Test Case 14");
+		boolean isLogin = loginHandler.authenticate(getMismatchUserId(), getOverOneCharMismatchhUserPassword());
+		assertFalse(isLogin);
 	}
 }
