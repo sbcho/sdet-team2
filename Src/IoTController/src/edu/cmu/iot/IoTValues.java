@@ -39,6 +39,9 @@ public abstract class IoTValues {
     public static final String LIGHT_ON = "1";
     public static final String LIGHT_OFF = "0";
 
+    public static final String PROXIMITY_ON = "1";      // bug: added
+    public static final String PROXIMITY_OFF = "0";
+
     public static final String HUMIDIFIER_ON = "1";
     public static final String HUMIDIFIER_OFF = "0";
 

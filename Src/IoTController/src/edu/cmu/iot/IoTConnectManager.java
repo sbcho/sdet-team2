@@ -88,14 +88,14 @@ public class IoTConnectManager {
                 if (count<keys.size()) {
                     newState.append(IoTValues.PARAM_DELIM);
                 }
-            } else if (key.equals(IoTValues.LIGHT_STATE)) {
-                Boolean newLightState = (Boolean) state.get(key);
-                newState.append(IoTValues.LIGHT_STATE);
+            } else if (key.equals(IoTValues.PROXIMITY_STATE)) {         // bug: light -> proximity
+                Boolean newHumidifierState = (Boolean) state.get(key);
+                newState.append(IoTValues.PROXIMITY_STATE);
                 newState.append(IoTValues.PARAM_EQ);
-                if (newLightState) {
-                    newState.append(IoTValues.LIGHT_ON);
+                if (newHumidifierState) {
+                    newState.append(IoTValues.PROXIMITY_ON);
                 } else {
-                    newState.append(IoTValues.LIGHT_OFF);
+                    newState.append(IoTValues.PROXIMITY_OFF);
                 }
                 count++;
                 if (count<keys.size()) {
@@ -114,7 +114,7 @@ public class IoTConnectManager {
                 if (count<keys.size()) {
                     newState.append(IoTValues.PARAM_DELIM);
                 }
-            } else if (key.equals(IoTValues.ALARM_STATE)) {
+            } else if (key.equals(IoTValues.HUMIDIFIER_STATE)) {         // bug: alarm -> humidifier
                 Boolean newHumidifierState = (Boolean) state.get(key);
                 newState.append(IoTValues.HUMIDIFIER_STATE);
                 newState.append(IoTValues.PARAM_EQ);
@@ -179,7 +179,7 @@ public class IoTConnectManager {
     private Hashtable<String,Object> handleStateUpdate(String stateUpdateMsg) {
 
 
-        if (stateUpdateMsg == null) {
+        if (stateUpdateMsg == null) {           // not reachable
             return null;
         }
         if (stateUpdateMsg.length() == 0) {
@@ -206,7 +206,7 @@ public class IoTConnectManager {
         if (String.valueOf(body.charAt(body.length()-1)).equals(IoTValues.MSG_END)) {
             body = body.substring(0, body.length() - 1);
         }
-        if (body==null) {
+        if (body==null) {               //not reachable
             return null;
         }
         StringTokenizer pt = new StringTokenizer(body, IoTValues.PARAM_DELIM);
@@ -249,21 +249,21 @@ public class IoTConnectManager {
                 }
             } else if (data[0].equals(IoTValues.HEATER_STATE)) {
                 if (val == 1) {
-                    state.put(IoTValues.HEATER_ON, true);
+                    state.put(IoTValues.HEATER_STATE, true);        //bug
                 } else {
-                    state.put(IoTValues.HEATER_OFF, false);
+                    state.put(IoTValues.HEATER_STATE, false);       //bug
                 }
             } else if (data[0].equals(IoTValues.CHILLER_STATE)) {
                 if (val == 1) {
-                    state.put(IoTValues.CHILLER_ON, true);
+                    state.put(IoTValues.CHILLER_STATE, true);       //bug
                 } else {
-                    state.put(IoTValues.CHILLER_OFF, false);
+                    state.put(IoTValues.CHILLER_STATE, false);      //bug
                 }
             } else if (data[0].equals(IoTValues.TEMP_READING)) {
                 state.put(IoTValues.TEMP_READING, val);
             } else if (data[0].equals(IoTValues.HUMIDITY_READING)) {
                 state.put(IoTValues.HUMIDITY_READING, val);
-            } else if (data[0].equals(IoTValues.HVAC_MODE)) {
+            } else if (data[0].equals(IoTValues.HVAC_MODE)) {       //what is it?? it's not in spec.
                 if (val == 1) {
                     state.put(IoTValues.HVAC_MODE, "Heater");
                 } else {
