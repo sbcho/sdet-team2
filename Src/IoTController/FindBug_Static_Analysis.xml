@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1454367456711" analysisTimestamp="1454367802313" release="">
+  <Project projectName="IoTHouse_Static_Analysis">
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTConnectManager.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTConnection.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlManager$1.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlManager$2.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlManager.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$1.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$10.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$11.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$12.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$13.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$2.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$3.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$4.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$5.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$6.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$7.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$8.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow$9.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControlWindow.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTControllerDriver.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\IoTValues.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\LoginAttemptsExceededException.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\LoginHandler.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\LoginWindow$1.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\LoginWindow$2.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\LoginWindow.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\NewUserDialog$1.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\NewUserDialog$2.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\NewUserDialog$3.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\NewUserDialog$4.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\NewUserDialog.class</Jar>
+    <Jar>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\out\production\IoTController\edu\cmu\iot\UserLoginInfo.class</Jar>
+    <SrcDir>V:\Data\Development\SDET\SDET Education\CMU\TeamProjects\Sources\Src\IoTController\src</SrcDir>
+  </Project>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTConnectManager">
+      <SourceLine classname="edu.cmu.iot.IoTConnectManager" sourcefile="IoTConnectManager.java" sourcepath="edu/cmu/iot/IoTConnectManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTConnectManager" name="handleStateUpdate" signature="(Ljava/lang/String;)Ljava/util/Hashtable;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTConnectManager" start="182" end="274" startBytecode="0" endBytecode="1072" sourcefile="IoTConnectManager.java" sourcepath="edu/cmu/iot/IoTConnectManager.java"/>
+    </Method>
+    <LocalVariable name="body" register="5" pc="98" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="edu.cmu.iot.IoTConnectManager" start="209" end="209" startBytecode="100" endBytecode="100" sourcefile="IoTConnectManager.java" sourcepath="edu/cmu/iot/IoTConnectManager.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.IoTConnectManager">
+      <SourceLine classname="edu.cmu.iot.IoTConnectManager" sourcefile="IoTConnectManager.java" sourcepath="edu/cmu/iot/IoTConnectManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTConnectManager" name="setState" signature="(Ljava/util/Hashtable;)Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTConnectManager" start="59" end="171" startBytecode="0" endBytecode="1520" sourcefile="IoTConnectManager.java" sourcepath="edu/cmu/iot/IoTConnectManager.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTConnectManager" start="66" end="66" startBytecode="52" endBytecode="52" sourcefile="IoTConnectManager.java" sourcepath="edu/cmu/iot/IoTConnectManager.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="edu.cmu.iot.IoTConnection">
+      <SourceLine classname="edu.cmu.iot.IoTConnection" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTConnection" name="connect" signature="(Ljava/lang/String;)Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTConnection" start="120" end="135" startBytecode="0" endBytecode="276" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTConnection" start="126" end="126" startBytecode="68" endBytecode="68" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="edu.cmu.iot.IoTConnection">
+      <SourceLine classname="edu.cmu.iot.IoTConnection" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTConnection" name="connect" signature="(Ljava/lang/String;)Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTConnection" start="120" end="135" startBytecode="0" endBytecode="276" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTConnection" start="125" end="125" startBytecode="43" endBytecode="43" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+  </BugInstance>
+  <BugInstance type="LI_LAZY_INIT_UPDATE_STATIC" priority="2" rank="8" abbrev="LI" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTConnection">
+      <SourceLine classname="edu.cmu.iot.IoTConnection" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTConnection" name="getConnection" signature="(Ljava/lang/String;)Ledu/cmu/iot/IoTConnection;" isStatic="true">
+      <SourceLine classname="edu.cmu.iot.IoTConnection" start="46" end="68" startBytecode="0" endBytecode="42" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+    </Method>
+    <Field classname="edu.cmu.iot.IoTConnection" name="connection" signature="Ledu/cmu/iot/IoTConnection;" isStatic="true" role="FIELD_ON">
+      <SourceLine classname="edu.cmu.iot.IoTConnection" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.IoTConnection" start="47" end="60" startBytecode="4" endBytecode="74" sourcefile="IoTConnection.java" sourcepath="edu/cmu/iot/IoTConnection.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="addUser" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="150" end="156" startBytecode="0" endBytecode="262" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="151" end="151" startBytecode="46" endBytecode="46" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="loadUsers" signature="()Ljava/util/Vector;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="87" end="102" startBytecode="0" endBytecode="335" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="92" end="92" startBytecode="53" endBytecode="53" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="loadSettings" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="109" end="127" startBytecode="0" endBytecode="320" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(Ljava/lang/String;)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="120" end="120" startBytecode="92" endBytecode="92" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="revertToLastState" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="301" end="328" startBytecode="0" endBytecode="273" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="326" end="326" startBytecode="136" endBytecode="136" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="saveLastState" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="276" end="294" startBytecode="0" endBytecode="273" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="293" end="293" startBytecode="136" endBytecode="136" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="getUserSettings" signature="()Ljava/util/Hashtable;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="145" end="145" startBytecode="0" endBytecode="46" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="userSettings" signature="Ljava/util/Hashtable;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="145" end="145" startBytecode="4" endBytecode="4" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_INTEGER_MULTIPLY_CAST_TO_LONG" priority="3" rank="20" abbrev="ICAST" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="startAwayTimer" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="361" end="401" startBytecode="0" endBytecode="124" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="400" end="400" startBytecode="38" endBytecode="38" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="humidityReading" signature="Ljava/lang/Integer;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Int value="66" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="422" end="422" startBytecode="87" endBytecode="87" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="232" end="232" startBytecode="47" endBytecode="47" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="233" end="233" startBytecode="58" endBytecode="58" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="newAlarmActiveState" signature="Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Int value="55" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="469" end="469" startBytecode="472" endBytecode="472" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="488" end="488" startBytecode="570" endBytecode="570" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="567" end="567" startBytecode="1002" endBytecode="1002" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="555" end="555" startBytecode="903" endBytecode="903" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="242" end="242" startBytecode="142" endBytecode="142" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="243" end="243" startBytecode="153" endBytecode="153" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="314" end="314" startBytecode="72" endBytecode="72" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="284" end="284" startBytecode="61" endBytecode="61" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="285" end="285" startBytecode="69" endBytecode="69" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="newChillerOnState" signature="Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Int value="55" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="584" end="584" startBytecode="1074" endBytecode="1074" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="649" end="649" startBytecode="1589" endBytecode="1589" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="637" end="637" startBytecode="1514" endBytecode="1514" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="632" end="632" startBytecode="1456" endBytecode="1456" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="248" end="248" startBytecode="199" endBytecode="199" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="249" end="249" startBytecode="210" endBytecode="210" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="308" end="308" startBytecode="42" endBytecode="42" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="280" end="280" startBytecode="31" endBytecode="31" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="281" end="281" startBytecode="39" endBytecode="39" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="newHeaterOnState" signature="Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Int value="55" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="623" end="623" startBytecode="1360" endBytecode="1360" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="611" end="611" startBytecode="1311" endBytecode="1311" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="601" end="601" startBytecode="1236" endBytecode="1236" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="594" end="594" startBytecode="1178" endBytecode="1178" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="246" end="246" startBytecode="180" endBytecode="180" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="247" end="247" startBytecode="191" endBytecode="191" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="305" end="305" startBytecode="27" endBytecode="27" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="278" end="278" startBytecode="16" endBytecode="16" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="279" end="279" startBytecode="24" endBytecode="24" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="newHvacSetting" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Int value="45" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="576" end="576" startBytecode="1022" endBytecode="1022" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="577" end="577" startBytecode="1029" endBytecode="1029" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="616" end="616" startBytecode="1315" endBytecode="1315" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="656" end="656" startBytecode="1621" endBytecode="1621" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="436" end="436" startBytecode="276" endBytecode="276" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="244" end="244" startBytecode="161" endBytecode="161" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="245" end="245" startBytecode="172" endBytecode="172" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="326" end="326" startBytecode="139" endBytecode="139" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="292" end="292" startBytecode="121" endBytecode="121" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="293" end="293" startBytecode="133" endBytecode="133" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="oldDoorState" signature="Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Int value="75" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="461" end="461" startBytecode="420" endBytecode="420" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="316" end="316" startBytecode="76" endBytecode="76" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="317" end="317" startBytecode="84" endBytecode="84" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="287" end="287" startBytecode="87" endBytecode="87" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="oldHumidifierState" signature="Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Int value="75" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="655" end="655" startBytecode="1604" endBytecode="1604" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="310" end="310" startBytecode="46" endBytecode="46" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="311" end="311" startBytecode="54" endBytecode="54" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="283" end="283" startBytecode="57" endBytecode="57" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="oldLightState" signature="Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Int value="75" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="443" end="443" startBytecode="325" endBytecode="325" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="319" end="319" startBytecode="91" endBytecode="91" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="320" end="320" startBytecode="99" endBytecode="99" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="289" end="289" startBytecode="102" endBytecode="102" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="oldProximityState" signature="Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="498" end="498" startBytecode="599" endBytecode="599" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="565" end="565" startBytecode="937" endBytecode="937" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="565" end="565" startBytecode="977" endBytecode="977" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="301" end="301" startBytecode="1" endBytecode="1" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="302" end="302" startBytecode="9" endBytecode="9" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="277" end="277" startBytecode="12" endBytecode="12" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="loadSettings" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="109" end="127" startBytecode="0" endBytecode="320" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="115" end="115" startBytecode="51" endBytecode="51" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="116" end="116" startBytecode="55" endBytecode="55" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="117" end="117" startBytecode="60" endBytecode="60" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="119" end="119" startBytecode="68" endBytecode="68" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="120" end="120" startBytecode="80" endBytecode="80" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="122" end="122" startBytecode="96" endBytecode="96" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="123" end="123" startBytecode="105" endBytecode="105" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="126" end="126" startBytecode="114" endBytecode="114" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="127" end="127" startBytecode="120" endBytecode="120" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="loadSettings" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="109" end="127" startBytecode="0" endBytecode="59" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream"/>
+    </Type>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="115" end="115" startBytecode="46" endBytecode="46" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="loadUsers" signature="()Ljava/util/Vector;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="87" end="102" startBytecode="0" endBytecode="54" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader"/>
+    </Type>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="92" end="92" startBytecode="44" endBytecode="44" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM_EXCEPTION_PATH" priority="3" rank="19" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="addUser" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="150" end="156" startBytecode="0" endBytecode="54" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Writer;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Writer"/>
+    </Type>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="151" end="151" startBytecode="36" endBytecode="36" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="connectToHouse" signature="(Ljava/lang/String;)Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="339" end="345" startBytecode="0" endBytecode="112" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="connMgr" signature="Ledu/cmu/iot/IoTConnectManager;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="340" end="340" startBytecode="19" endBytecode="19" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN" priority="2" rank="16" abbrev="RC" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="703" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Boolean;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Boolean"/>
+    </Type>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="oldAlarmState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="newAlarmState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="523" end="523" startBytecode="715" endBytecode="715" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN" priority="2" rank="16" abbrev="RC" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="703" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Boolean;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Boolean"/>
+    </Type>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="oldDoorState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="newDoorState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="461" end="461" startBytecode="423" endBytecode="423" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN" priority="2" rank="16" abbrev="RC" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="703" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Boolean;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Boolean"/>
+    </Type>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="oldHumidifierState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="newHumidifierState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="655" end="655" startBytecode="1607" endBytecode="1607" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN" priority="2" rank="16" abbrev="RC" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="703" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Boolean;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Boolean"/>
+    </Type>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="oldLightState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="newLightState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="443" end="443" startBytecode="328" endBytecode="328" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN" priority="2" rank="16" abbrev="RC" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="703" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Boolean;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Boolean"/>
+    </Type>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="oldProximityState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <Field classname="edu.cmu.iot.IoTControlManager" name="newProximityState" signature="Ljava/lang/Boolean;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="498" end="498" startBytecode="602" endBytecode="602" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="loadSettings" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="109" end="127" startBytecode="0" endBytecode="320" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="117" end="117" startBytecode="63" endBytecode="63" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="loadUsers" signature="()Ljava/util/Vector;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="87" end="102" startBytecode="0" endBytecode="335" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="99" end="99" startBytecode="105" endBytecode="105" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="3" rank="19" abbrev="UC" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="2543" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <String value="this.newAlarmState == false"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="536" end="536" startBytecode="788" endBytecode="788" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="3" rank="19" abbrev="UC" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="2543" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <String value="this.newDoorState == false"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="484" end="484" startBytecode="531" endBytecode="531" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="3" rank="19" abbrev="UC" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="2543" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <String value="this.newLightState == false"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="453" end="453" startBytecode="394" endBytecode="394" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="3" rank="19" abbrev="UC" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="2543" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <String value="this.newProximityState == true"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="508" end="508" startBytecode="640" endBytecode="640" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.IoTControlManager">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlManager" name="evaluateNewState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="412" end="664" startBytecode="0" endBytecode="2543" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlManager" start="420" end="420" startBytecode="54" endBytecode="54" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+  </BugInstance>
+  <BugInstance type="BX_BOXING_IMMEDIATELY_UNBOXED_TO_PERFORM_COERCION" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.IoTControlWindow">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlWindow" name="updateState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="479" end="591" startBytecode="0" endBytecode="1610" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="494" end="494" startBytecode="188" endBytecode="188" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlWindow">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlWindow" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="90" end="305" startBytecode="0" endBytecode="677" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="126" end="126" startBytecode="200" endBytecode="200" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+  </BugInstance>
+  <BugInstance type="DM_FP_NUMBER_CTOR" priority="3" rank="20" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.IoTControlWindow">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlWindow" name="updateState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="479" end="591" startBytecode="0" endBytecode="1610" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Method>
+    <Method classname="java.lang.Double" name="&lt;init&gt;" signature="(D)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Double"/>
+    </Method>
+    <Method classname="java.lang.Double" name="valueOf" signature="(D)Ljava/lang/Double;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Double"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="494" end="494" startBytecode="185" endBytecode="185" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlWindow">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlWindow" name="updateState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="479" end="591" startBytecode="0" endBytecode="1610" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="494" end="494" startBytecode="184" endBytecode="184" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlWindow">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlWindow" name="HvacPanel" signature="Ljavax/swing/JPanel;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlWindow">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControlWindow" name="controller" signature="Ledu/cmu/iot/IoTControlManager;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Field>
+    <Type descriptor="Ledu/cmu/iot/IoTControlManager;" role="TYPE_FOUND">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="18" end="675" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.IoTControlWindow">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlWindow" name="updateState" signature="(Ljava/util/Hashtable;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="479" end="591" startBytecode="0" endBytecode="1610" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow" start="483" end="483" startBytecode="39" endBytecode="39" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControlWindow$13">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlWindow$13" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="390" end="405" startBytecode="0" endBytecode="42" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Method>
+    <LocalVariable name="fileToSave" register="4" pc="33" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="396" end="396" startBytecode="31" endBytecode="31" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="fileToSave"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="edu.cmu.iot.IoTControlWindow$13">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlWindow$13" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="390" end="405" startBytecode="0" endBytecode="278" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="398" end="398" startBytecode="59" endBytecode="59" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="edu.cmu.iot.IoTControlWindow$13">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlWindow$13" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="390" end="405" startBytecode="0" endBytecode="278" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Method>
+    <Class classname="java.io.Writer" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.Writer"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="398" end="398" startBytecode="59" endBytecode="59" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="399" end="399" startBytecode="64" endBytecode="64" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="401" end="401" startBytecode="87" endBytecode="87" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="402" end="402" startBytecode="89" endBytecode="89" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="405" end="405" startBytecode="94" endBytecode="94" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Writer x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM_EXCEPTION_PATH" priority="3" rank="19" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.IoTControlWindow$13">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControlWindow$13" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="390" end="405" startBytecode="0" endBytecode="42" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Writer;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Writer"/>
+    </Type>
+    <SourceLine classname="edu.cmu.iot.IoTControlWindow$13" start="398" end="398" startBytecode="33" endBytecode="33" sourcefile="IoTControlWindow.java" sourcepath="edu/cmu/iot/IoTControlWindow.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="edu.cmu.iot.IoTControllerDriver">
+      <SourceLine classname="edu.cmu.iot.IoTControllerDriver" sourcefile="IoTControllerDriver.java" sourcepath="edu/cmu/iot/IoTControllerDriver.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.IoTControllerDriver" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="edu.cmu.iot.IoTControllerDriver" start="23" end="24" startBytecode="0" endBytecode="7" sourcefile="IoTControllerDriver.java" sourcepath="edu/cmu/iot/IoTControllerDriver.java"/>
+    </Method>
+    <LocalVariable name="controller" register="1" pc="11" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="edu.cmu.iot.IoTControllerDriver" start="23" end="23" startBytecode="10" endBytecode="10" sourcefile="IoTControllerDriver.java" sourcepath="edu/cmu/iot/IoTControllerDriver.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="controller"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.IoTControllerDriver">
+      <SourceLine classname="edu.cmu.iot.IoTControllerDriver" sourcefile="IoTControllerDriver.java" sourcepath="edu/cmu/iot/IoTControllerDriver.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.IoTControllerDriver" name="mainWindow" signature="Ledu/cmu/iot/IoTControlWindow;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.IoTControllerDriver" sourcefile="IoTControllerDriver.java" sourcepath="edu/cmu/iot/IoTControllerDriver.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.IoTControllerDriver" start="17" end="17" startBytecode="13" endBytecode="13" sourcefile="IoTControllerDriver.java" sourcepath="edu/cmu/iot/IoTControllerDriver.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CONFUSING" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.LoginWindow">
+      <SourceLine classname="edu.cmu.iot.LoginWindow" sourcefile="LoginWindow.java" sourcepath="edu/cmu/iot/LoginWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.LoginWindow" name="getUsername" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.LoginWindow" start="115" end="115" startBytecode="0" endBytecode="52" sourcefile="LoginWindow.java" sourcepath="edu/cmu/iot/LoginWindow.java"/>
+    </Method>
+    <Class classname="edu.cmu.iot.UserLoginInfo">
+      <SourceLine classname="edu.cmu.iot.UserLoginInfo" sourcefile="LoginHandler.java" sourcepath="edu/cmu/iot/LoginHandler.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.UserLoginInfo" name="getUserName" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.UserLoginInfo" start="76" end="76" startBytecode="0" endBytecode="46" sourcefile="LoginHandler.java" sourcepath="edu/cmu/iot/LoginHandler.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="edu.cmu.iot.LoginWindow">
+      <SourceLine classname="edu.cmu.iot.LoginWindow" sourcefile="LoginWindow.java" sourcepath="edu/cmu/iot/LoginWindow.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.LoginWindow" name="&lt;init&gt;" signature="(Ljava/awt/Frame;Ljava/util/Vector;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.LoginWindow" start="29" end="112" startBytecode="0" endBytecode="609" sourcefile="LoginWindow.java" sourcepath="edu/cmu/iot/LoginWindow.java"/>
+    </Method>
+    <Field classname="edu.cmu.iot.LoginWindow" name="login" signature="Ledu/cmu/iot/LoginHandler;" isStatic="true">
+      <SourceLine classname="edu.cmu.iot.LoginWindow" sourcefile="LoginWindow.java" sourcepath="edu/cmu/iot/LoginWindow.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.LoginWindow" start="31" end="31" startBytecode="16" endBytecode="16" sourcefile="LoginWindow.java" sourcepath="edu/cmu/iot/LoginWindow.java"/>
+  </BugInstance>
+  <BugInstance type="NS_NON_SHORT_CIRCUIT" priority="3" rank="20" abbrev="NS" category="STYLE">
+    <Class classname="edu.cmu.iot.NewUserDialog">
+      <SourceLine classname="edu.cmu.iot.NewUserDialog" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.NewUserDialog" name="checkNewPassword" signature="()Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.NewUserDialog" start="81" end="100" startBytecode="0" endBytecode="380" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.iot.NewUserDialog" start="97" end="97" startBytecode="125" endBytecode="125" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="edu.cmu.iot.NewUserDialog">
+      <SourceLine classname="edu.cmu.iot.NewUserDialog" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+    </Class>
+    <Field classname="edu.cmu.iot.NewUserDialog" name="controller" signature="Ledu/cmu/iot/IoTControlManager;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.NewUserDialog" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+    </Field>
+    <Type descriptor="Ledu/cmu/iot/IoTControlManager;" role="TYPE_FOUND">
+      <SourceLine classname="edu.cmu.iot.IoTControlManager" start="18" end="675" sourcefile="IoTControlManager.java" sourcepath="edu/cmu/iot/IoTControlManager.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="3" rank="20" abbrev="UPM" category="PERFORMANCE">
+    <Class classname="edu.cmu.iot.NewUserDialog">
+      <SourceLine classname="edu.cmu.iot.NewUserDialog" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.NewUserDialog" name="$$$setupUI$$$" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.NewUserDialog" start="150" end="184" startBytecode="0" endBytecode="894" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UR_UNINIT_READ" priority="2" rank="3" abbrev="UR" category="CORRECTNESS">
+    <Class classname="edu.cmu.iot.NewUserDialog">
+      <SourceLine classname="edu.cmu.iot.NewUserDialog" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+    </Class>
+    <Method classname="edu.cmu.iot.NewUserDialog" name="&lt;init&gt;" signature="(Ledu/cmu/iot/IoTControlManager;Ledu/cmu/iot/IoTControlWindow;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.NewUserDialog" start="37" end="73" startBytecode="0" endBytecode="229" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+    </Method>
+    <Field classname="edu.cmu.iot.NewUserDialog" name="contentPane" signature="Ljavax/swing/JPanel;" isStatic="false">
+      <SourceLine classname="edu.cmu.iot.NewUserDialog" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.iot.NewUserDialog" start="38" end="38" startBytecode="6" endBytecode="6" sourcefile="NewUserDialog.java" sourcepath="edu/cmu/iot/NewUserDialog.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>com.intellij.uiDesigner.core.GridConstraints</MissingClass>
+    <MissingClass>com.intellij.uiDesigner.core.GridLayoutManager</MissingClass>
+    <MissingClass>com.intellij.uiDesigner.core.Spacer</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 1 Feb 2016 17:57:36 -0500" total_classes="32" referenced_classes="376" total_bugs="57" total_size="1637" num_packages="1" java_version="1.8.0_71" vm_version="25.71-b15" cpu_seconds="44.57" clock_seconds="317.24" peak_mbytes="339.90" alloc_mbytes="683.00" gc_seconds="0.51" priority_3="16" priority_2="34" priority_1="7">
+    <PackageStats package="edu.cmu.iot" total_bugs="57" total_types="32" total_size="1637" priority_3="16" priority_2="34" priority_1="7">
+      <ClassStats class="edu.cmu.iot.IoTConnectManager" sourceFile="IoTConnectManager.java" interface="false" size="178" bugs="2" priority_2="2"/>
+      <ClassStats class="edu.cmu.iot.IoTConnection" sourceFile="IoTConnection.java" interface="false" size="63" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="edu.cmu.iot.IoTControlManager" sourceFile="IoTControlManager.java" interface="false" size="346" bugs="33" priority_3="8" priority_2="23" priority_1="2"/>
+      <ClassStats class="edu.cmu.iot.IoTControlManager$1" sourceFile="IoTControlManager.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlManager$2" sourceFile="IoTControlManager.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow" sourceFile="IoTControlWindow.java" interface="false" size="486" bugs="7" priority_3="3" priority_2="4"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$1" sourceFile="IoTControlWindow.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$10" sourceFile="IoTControlWindow.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$11" sourceFile="IoTControlWindow.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$12" sourceFile="IoTControlWindow.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$13" sourceFile="IoTControlWindow.java" interface="false" size="17" bugs="4" priority_3="1" priority_2="2" priority_1="1"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$2" sourceFile="IoTControlWindow.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$3" sourceFile="IoTControlWindow.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$4" sourceFile="IoTControlWindow.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$5" sourceFile="IoTControlWindow.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$6" sourceFile="IoTControlWindow.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$7" sourceFile="IoTControlWindow.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$8" sourceFile="IoTControlWindow.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControlWindow$9" sourceFile="IoTControlWindow.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.IoTControllerDriver" sourceFile="IoTControllerDriver.java" interface="false" size="9" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="edu.cmu.iot.IoTValues" sourceFile="IoTValues.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.LoginAttemptsExceededException" sourceFile="LoginAttemptsExceededException.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.LoginHandler" sourceFile="LoginHandler.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.LoginWindow" sourceFile="LoginWindow.java" interface="false" size="64" bugs="2" priority_3="1" priority_1="1"/>
+      <ClassStats class="edu.cmu.iot.LoginWindow$1" sourceFile="LoginWindow.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.LoginWindow$2" sourceFile="LoginWindow.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.NewUserDialog" sourceFile="NewUserDialog.java" interface="false" size="108" bugs="4" priority_3="3" priority_2="1"/>
+      <ClassStats class="edu.cmu.iot.NewUserDialog$1" sourceFile="NewUserDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.NewUserDialog$2" sourceFile="NewUserDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.NewUserDialog$3" sourceFile="NewUserDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.NewUserDialog$4" sourceFile="NewUserDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="edu.cmu.iot.UserLoginInfo" sourceFile="LoginHandler.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1107" invocations="1657" avgMicrosecondsPerInvocation="668" maxMicrosecondsPerInvocation="315209" standardDeviationMircosecondsPerInvocation="7803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="949" invocations="2" avgMicrosecondsPerInvocation="474592" maxMicrosecondsPerInvocation="479915" standardDeviationMircosecondsPerInvocation="5323"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="503" invocations="376" avgMicrosecondsPerInvocation="1339" maxMicrosecondsPerInvocation="59694" standardDeviationMircosecondsPerInvocation="3832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="489" invocations="376" avgMicrosecondsPerInvocation="1303" maxMicrosecondsPerInvocation="20704" standardDeviationMircosecondsPerInvocation="2581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="398" invocations="1661" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="20462" standardDeviationMircosecondsPerInvocation="1097"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="281" invocations="890" avgMicrosecondsPerInvocation="316" maxMicrosecondsPerInvocation="12295" standardDeviationMircosecondsPerInvocation="606"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="197" invocations="154" avgMicrosecondsPerInvocation="1284" maxMicrosecondsPerInvocation="49258" standardDeviationMircosecondsPerInvocation="4817"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="193" invocations="150" avgMicrosecondsPerInvocation="1290" maxMicrosecondsPerInvocation="33800" standardDeviationMircosecondsPerInvocation="4046"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="188" invocations="150" avgMicrosecondsPerInvocation="1258" maxMicrosecondsPerInvocation="45928" standardDeviationMircosecondsPerInvocation="5185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="188" invocations="150" avgMicrosecondsPerInvocation="1256" maxMicrosecondsPerInvocation="48822" standardDeviationMircosecondsPerInvocation="4658"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="139" invocations="153" avgMicrosecondsPerInvocation="911" maxMicrosecondsPerInvocation="21875" standardDeviationMircosecondsPerInvocation="2469"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="131" invocations="376" avgMicrosecondsPerInvocation="350" maxMicrosecondsPerInvocation="9362" standardDeviationMircosecondsPerInvocation="739"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="131" invocations="1605" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="1980" standardDeviationMircosecondsPerInvocation="152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="121" invocations="464" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="24430" standardDeviationMircosecondsPerInvocation="1279"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="112" invocations="150" avgMicrosecondsPerInvocation="747" maxMicrosecondsPerInvocation="16148" standardDeviationMircosecondsPerInvocation="1790"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="99" invocations="376" avgMicrosecondsPerInvocation="265" maxMicrosecondsPerInvocation="13488" standardDeviationMircosecondsPerInvocation="856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="98" invocations="376" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="4799" standardDeviationMircosecondsPerInvocation="438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="96" invocations="376" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="15249" standardDeviationMircosecondsPerInvocation="881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="90" invocations="376" avgMicrosecondsPerInvocation="241" maxMicrosecondsPerInvocation="7248" standardDeviationMircosecondsPerInvocation="620"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
