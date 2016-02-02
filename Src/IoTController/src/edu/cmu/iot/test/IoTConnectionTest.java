@@ -103,13 +103,13 @@ public class IoTConnectionTest {
 
     @Test
     public void testSendMessageToHouseWithInput() {
-//        fail("Not yet implemented");
+        fail("Not yet implemented");
         //not testable. it should be tested in real
     }
 
     @Test
     public void testDisconnect() {
-//        fail("Not yet implemented");
+        fail("Not yet implemented");
         //not testable. it should be tested in real
     }
 
