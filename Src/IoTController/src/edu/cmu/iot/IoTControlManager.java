@@ -66,16 +66,16 @@ public class IoTControlManager {
      */
     public IoTControlManager(IoTControlWindow controlWin, String path) {
 
-        logMessages = new Vector<String>();
+        setLogMessages(new Vector<String>());
         controlWindow = controlWin;
 
-        userSettings = new Hashtable<String, Object >();
+        setUserSettings(new Hashtable<String, Object >());
 
-        settingsPath = path;
+        setSettingsPath(path);
 
-        connMgr = null;
+        setConnMgr(null);
 
-        newAlarmActiveState = false;
+        setNewAlarmActiveState(false);
 
     }
 
@@ -87,7 +87,7 @@ public class IoTControlManager {
         Vector<UserLoginInfo> users = new Vector<UserLoginInfo>();
 
         try {
-            File file = new File(settingsPath + File.separator + IoTValues.USERS_DB);
+            File file = new File(getSettingsPath() + File.separator + IoTValues.USERS_DB);
 
             BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -111,7 +111,7 @@ public class IoTControlManager {
 
         // First try loading from the current directory
         try {
-            File f = new File(settingsPath + File.separator + IoTValues.SETTINGS_FILE);
+            File f = new File(getSettingsPath() + File.separator + IoTValues.SETTINGS_FILE);
             is = new FileInputStream( f );
             props.load( is );
         } catch ( Exception e ) { e.printStackTrace(); }
@@ -132,8 +132,8 @@ public class IoTControlManager {
      * @param newSettings the new user settings.
      */
     public void updateSettings(Hashtable<String, Object> newSettings) {
-        if (userSettings!=null) {
-            userSettings.putAll(newSettings);
+        if (getUserSettings()!=null) {
+            getUserSettings().putAll(newSettings);
         }
     }
 
@@ -147,7 +147,7 @@ public class IoTControlManager {
 
     public void addUser(String newUsername, String newPassword) {
         try {
-            File f = new File(settingsPath + File.separator + IoTValues.USERS_DB);
+            File f = new File(getSettingsPath() + File.separator + IoTValues.USERS_DB);
             BufferedWriter bw = new BufferedWriter(new FileWriter(f, true));
             bw.write(newUsername+"="+newPassword + "\n");
             bw.close();
@@ -165,11 +165,11 @@ public class IoTControlManager {
                 Integer missedUpdates = 0;
                 while (true) {
 
-                    synchronized (connMgr) {
-                        if (connMgr.isConnected() == false) {
+                    synchronized (getConnMgr()) {
+                        if (getConnMgr().isConnected() == false) {
                             return;
                         }
-                        state = connMgr.getState();
+                        state = getConnMgr().getState();
                     }
                     if (state != null) {
                         processStateUpdate(state);
@@ -204,7 +204,7 @@ public class IoTControlManager {
      */
     public synchronized void processStateUpdate(Hashtable<String, Object> newState) {
 
-        synchronized (connMgr) {
+        synchronized (getConnMgr()) {
             synchronized(newState) {
 
                 // determine if the new state should be accepted. Make any necessary corrections
@@ -213,7 +213,7 @@ public class IoTControlManager {
                 updateInternalState();
 
                 // the current state has been evaluated
-                connMgr.setState(getCurrentState());
+                getConnMgr().setState(getCurrentState());
             }
         }
     }
@@ -239,8 +239,8 @@ public class IoTControlManager {
             state.put(IoTValues.PROXIMITY_STATE,newProximityState);
         if (newAlarmState!=null)
             state.put(IoTValues.ALARM_STATE,newAlarmState);
-        if (newAlarmActiveState!=null)
-            state.put(IoTValues.ALARM_ACTIVE, newAlarmActiveState);
+        if (getNewAlarmActiveState()!=null)
+            state.put(IoTValues.ALARM_ACTIVE, getNewAlarmActiveState());
         if (newHvacSetting!=null)
             state.put(IoTValues.HVAC_MODE,newHvacSetting);
         if (newHeaterOnState!=null)
@@ -260,11 +260,11 @@ public class IoTControlManager {
 
         if (state.isEmpty() == false) {
             controlWindow.updateState(state);
-            controlWindow.updateLog(logMessages);
+            controlWindow.updateLog(getLogMessages());
 
             saveLastState();
 
-            logMessages.clear();
+            getLogMessages().clear();
         }
     }
 
@@ -281,8 +281,8 @@ public class IoTControlManager {
             oldChillerOnState = newChillerOnState;
         if (newHumidifierState!=null)
             oldHumidifierState = newHumidifierState;
-        if (newAlarmActiveState!=null)
-            oldAlarmActiveState = newAlarmActiveState;
+        if (getNewAlarmActiveState()!=null)
+            oldAlarmActiveState = getNewAlarmActiveState();
         if (newDoorState!=null)
             oldDoorState = newDoorState;
         if (newLightState!=null)
@@ -311,7 +311,7 @@ public class IoTControlManager {
             newHumidifierState = oldHumidifierState;
 
         if (oldAlarmActiveState!=null)
-            newAlarmActiveState = oldAlarmActiveState;
+            setNewAlarmActiveState(oldAlarmActiveState);
 
         if (oldDoorState!=null)
             newDoorState = oldDoorState;
@@ -336,8 +336,8 @@ public class IoTControlManager {
      */
     public Boolean connectToHouse(String houseAddress) {
 
-        connMgr = new IoTConnectManager(IoTConnection.getConnection(houseAddress));
-        if (connMgr != null) {
+        setConnMgr(new IoTConnectManager(IoTConnection.getConnection(houseAddress)));
+        if (getConnMgr() != null) {
             startHouseUpdateThread();
 
             return true;
@@ -349,8 +349,8 @@ public class IoTControlManager {
      * Disconnect from a house
      */
     public void disconnectFromHouse() {
-        if (connMgr.isConnected()) {
-            connMgr.disconnectFromHouse();
+        if (getConnMgr().isConnected()) {
+            getConnMgr().disconnectFromHouse();
         }
     }
 
@@ -360,7 +360,7 @@ public class IoTControlManager {
     private void startAwayTimer() {
         Timer t = new Timer();
 
-        Integer awayTimeout = (Integer) userSettings.get(IoTValues.ALARM_DELAY);
+        Integer awayTimeout = (Integer) getUserSettings().get(IoTValues.ALARM_DELAY);
 
         t.schedule(new TimerTask() {
 
@@ -389,8 +389,8 @@ public class IoTControlManager {
                         logMsg.append("closing door ");
                     }
 
-                    synchronized (logMessages) {
-                        logMessages.add(logMsg.toString());
+                    synchronized (getLogMessages()) {
+                        getLogMessages().add(logMsg.toString());
                     }
 
                     processStateUpdate(getCurrentState());
@@ -444,14 +444,14 @@ public class IoTControlManager {
 
                 if (newLightState) {
                     if (!newProximityState) {
-                        logMessages.add("Cannot turn on light because user not home");
+                        getLogMessages().add("Cannot turn on light because user not home");
                         newLightState = false;
 
                     } else {
-                        logMessages.add("Turning on light");
+                        getLogMessages().add("Turning on light");
                     }
                 } else if (!newLightState) {
-                    logMessages.add("Turning off light");
+                    getLogMessages().add("Turning off light");
                 }
             }
         }
@@ -465,16 +465,16 @@ public class IoTControlManager {
 
                     if (newAlarmState && !newProximityState) {
                         // door open and no one home and the alarm is set - sound alarm
-                        logMessages.add("Activating alarm");
-                        newAlarmActiveState = true;
+                        getLogMessages().add("Activating alarm");
+                        setNewAlarmActiveState(true);
                     }
                     // House vacant, close the door
                     else if (!newProximityState) {
                         // close the door
                         newDoorState = false;
-                        logMessages.add("Closing the door because user not home");
+                        getLogMessages().add("Closing the door because user not home");
                     } else {
-                        logMessages.add("Opened door");
+                        getLogMessages().add("Opened door");
                     }
 
                     // The door is open the alarm is to be set and somebody is home - this is not allowed so discard the processStateUpdate
@@ -484,10 +484,10 @@ public class IoTControlManager {
                 else if (!newDoorState) {
                     // the door is closed - if the house is suddenly occupied this is a break-in
                     if (newAlarmState && newProximityState) {
-                        logMessages.add("Break-in detected - activating alarm");
-                        newAlarmActiveState = true;
+                        getLogMessages().add("Break-in detected - activating alarm");
+                        setNewAlarmActiveState(true);
                     } else {
-                        logMessages.add("Closed door");
+                        getLogMessages().add("Closed door");
                     }
                 }
             }
@@ -500,18 +500,18 @@ public class IoTControlManager {
                 // the house is not occupied
                 if (!newProximityState) {
 
-                    logMessages.add("User not home");
+                    getLogMessages().add("User not home");
 
                     startAwayTimer();
                 }
                 // the user has arrived
                 else if (newProximityState) {
-                    logMessages.add("User is home");
+                    getLogMessages().add("User is home");
                     // if the alarm has been disabled, then turn on the light for the user
                     if (oldAlarmState!=null) {
                         if (!newLightState && !oldAlarmState) {
                             newLightState = true;
-                            logMessages.add("Turning on light");
+                            getLogMessages().add("Turning on light");
                         }
                     }
                 }
@@ -525,12 +525,12 @@ public class IoTControlManager {
                 // set the alarm
                 if (newAlarmState) {
 
-                    logMessages.add("Enabling alarm");
+                    getLogMessages().add("Enabling alarm");
 
                     // alarm to be set and user left and door open
                     if (!newProximityState && newDoorState) {
                         newDoorState = false;
-                        logMessages.add("Closing the door because alarm enabled and user not home");
+                        getLogMessages().add("Closing the door because alarm enabled and user not home");
                     }
 
                 } else if (!newAlarmState) { // attempt to disable alarm
@@ -538,21 +538,21 @@ public class IoTControlManager {
                     if (!newProximityState) { // && newDoorState
                         newAlarmState = true;
 
-                        logMessages.add("Cannot disable the alarm, user not home");
+                        getLogMessages().add("Cannot disable the alarm, user not home");
                     } else if (givenPassCode != null) {
                         if (givenPassCode.compareTo(alarmPassCode) < 0) {
-                            logMessages.add("Cannot disable alarm, invalid passcode given");
+                            getLogMessages().add("Cannot disable alarm, invalid passcode given");
                             newAlarmState = true;
 
                         } else {
-                            logMessages.add("Correct passcode entered; Disabled alarm");
+                            getLogMessages().add("Correct passcode entered; Disabled alarm");
                         }
                     }
                 }
 
                 if (oldAlarmState != null) {
                     if (oldAlarmState && !newAlarmState) { // alarm disabled
-                        newAlarmActiveState = false;
+                        setNewAlarmActiveState(false);
                     }
                 }
             }
@@ -563,12 +563,12 @@ public class IoTControlManager {
         // 2. the house is suddenly occupied
         try {
             if ((newAlarmState && newDoorState && (!newProximityState && oldProximityState)) || (newAlarmState && !newDoorState && (newProximityState && !oldProximityState))) {
-                logMessages.add("Activating alarm");
-                newAlarmActiveState = true;
+                getLogMessages().add("Activating alarm");
+                setNewAlarmActiveState(true);
             }
         } catch (NullPointerException npe) {
             // Not enough information to evaluate alarm
-            logMessages.add("Warning: Not enough information to evaluate alarm");
+            getLogMessages().add("Warning: Not enough information to evaluate alarm");
         }
 
 
@@ -578,7 +578,7 @@ public class IoTControlManager {
 
                 if (oldChillerOnState!=null) {
                     if (oldChillerOnState==true) {
-                        logMessages.add("Turning off air conditioner");
+                        getLogMessages().add("Turning off air conditioner");
                     }
                 }
                 newChillerOnState = false; // can't run AC
@@ -589,14 +589,14 @@ public class IoTControlManager {
                     if (tempReading < targetTempSetting) {
                         if (oldHeaterOnState != null) {
                             if (!oldHeaterOnState) {
-                                logMessages.add("Turning on heater, target temperature = " + targetTempSetting
+                                getLogMessages().add("Turning on heater, target temperature = " + targetTempSetting
                                         + "F, current temperature = " + tempReading + "F");
                                 newHeaterOnState = true;
                             }
                             // Heater already on
                         } else {
                             // heater not yet on
-                            logMessages.add("Turning on heater target temperature = " + targetTempSetting
+                            getLogMessages().add("Turning on heater target temperature = " + targetTempSetting
                                     + "F, current temperature = " + tempReading + "F");
                             newHeaterOnState = true;
                         }
@@ -604,7 +604,7 @@ public class IoTControlManager {
                         // Heater not needed
                         if (oldHeaterOnState != null) {
                             if (oldHeaterOnState) {
-                                logMessages.add("Turning off heater target temperature = " + targetTempSetting
+                                getLogMessages().add("Turning off heater target temperature = " + targetTempSetting
                                         + "F, current temperature = " + tempReading + "F");
                             }
                         }
@@ -617,7 +617,7 @@ public class IoTControlManager {
 
                 if (oldHeaterOnState!=null) {
                     if (oldHeaterOnState==true) {
-                        logMessages.add("Turning off heater");
+                        getLogMessages().add("Turning off heater");
                     }
                 }
                 newHeaterOnState = false; // can't run heater
@@ -627,12 +627,12 @@ public class IoTControlManager {
                     if (tempReading > targetTempSetting) {
                         if (oldChillerOnState != null) {
                             if (!oldChillerOnState) {
-                                logMessages.add("Turning on air conditioner target temperature = "
+                                getLogMessages().add("Turning on air conditioner target temperature = "
                                         + targetTempSetting + "F, current temperature = " + tempReading + "F");
                                 newChillerOnState = true;
                             } // AC already on
                         } else {
-                            logMessages.add("Turning on air conditioner target temperature = "
+                            getLogMessages().add("Turning on air conditioner target temperature = "
                                     + targetTempSetting + "F, current temperature = " + tempReading + "F");
                             newChillerOnState = true;
 
@@ -642,7 +642,7 @@ public class IoTControlManager {
                     else {
                         if (oldChillerOnState != null) {
                             if (oldChillerOnState) {
-                                logMessages.add("Turning off air conditioner target temperature = "
+                                getLogMessages().add("Turning off air conditioner target temperature = "
                                         + targetTempSetting + "F, current temperature = " + tempReading + "F");
                             }
                         }
@@ -654,9 +654,9 @@ public class IoTControlManager {
         if (newHumidifierState!=null) {
             if (newHumidifierState != oldHumidifierState) {
                 if (newHumidifierState && newHvacSetting.equals("Chiller")) {
-                    logMessages.add("Enabled Dehumidifier");
+                    getLogMessages().add("Enabled Dehumidifier");
                 } else {
-                    logMessages.add("Disabled Dehumidifier");
+                    getLogMessages().add("Disabled Dehumidifier");
                     newHumidifierState = false;
                 }
             }
@@ -669,9 +669,45 @@ public class IoTControlManager {
      * @return true if connected to the house, false otherwise
      */
     public Boolean isConnected() {
-        if (connMgr == null) {
+        if (getConnMgr() == null) {
             return false;
         }
-        return connMgr.isConnected();
+        return getConnMgr().isConnected();
     }
+
+	public IoTConnectManager getConnMgr() {
+		return connMgr;
+	}
+
+	public void setConnMgr(IoTConnectManager connMgr) {
+		this.connMgr = connMgr;
+	}
+
+	public Vector<String> getLogMessages() {
+		return logMessages;
+	}
+
+	public void setLogMessages(Vector<String> logMessages) {
+		this.logMessages = logMessages;
+	}
+
+	public void setUserSettings(Hashtable<String, Object> userSettings) {
+		this.userSettings = userSettings;
+	}
+
+	public String getSettingsPath() {
+		return settingsPath;
+	}
+
+	public void setSettingsPath(String settingsPath) {
+		this.settingsPath = settingsPath;
+	}
+
+	public Boolean getNewAlarmActiveState() {
+		return newAlarmActiveState;
+	}
+
+	public void setNewAlarmActiveState(Boolean newAlarmActiveState) {
+		this.newAlarmActiveState = newAlarmActiveState;
+	}
 }

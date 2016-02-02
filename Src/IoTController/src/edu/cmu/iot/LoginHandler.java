@@ -53,6 +53,22 @@ public class LoginHandler {
         times++;
         return false;
     }
+    
+	public int getTimes() {
+		return times;
+	}
+
+	public void setTimes(int times) {
+		this.times = times;
+	}
+
+	public Vector<UserLoginInfo> getValidUsers() {
+		return validUsers;
+	}
+
+	public void setValidUsers(Vector<UserLoginInfo> validUsers) {
+		this.validUsers = validUsers;
+	}
 }
 
 /**
