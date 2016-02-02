@@ -10,10 +10,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class BlackBoxTest_UserCase_12 {
-	private static final String settingsDir = "D:\\tmp";
+	private static final String settingsDir = "D:\\Tmp";
 	private LoginHandler loginHandler;
 	private IoTControlManager controller;
-//	private IoTControlWindow controlWin;
 	
 	@Before
 	public void setup() {
