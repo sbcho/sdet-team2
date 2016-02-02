@@ -3,7 +3,7 @@ package edu.cmu.iot;
 import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.util.Hashtable;
+//import java.util.Hashtable;   // not used
 
 /**
  * A connection to an IoT-enabled house. This class handles the network connection to the house
@@ -116,7 +116,7 @@ public class IoTConnection {
      * @param addr the address of the house
      * @return true if connection successful, false otherwise
      */
-    private Boolean connect(String addr) {
+    public Boolean connect(String addr) {   // modified accessor(private->public) for only test
         address = addr;
 
         try {
@@ -135,4 +135,7 @@ public class IoTConnection {
         return true;
     }
 
+    public static void setConnection(IoTConnection connection) {        //added for only test
+        IoTConnection.connection = connection;
+    }
 }

@@ -216,7 +216,7 @@ String HandleSetState(String newState) {
       // not yet implemented
     }
     // Chiller state
-    else if (item.substring(0,3) == "CS") {
+    else if (item.substring(0,3) == "CHS") {		//bug but not implemented, CS --> CHS
       // Not yet implemented  
     }
   }  
