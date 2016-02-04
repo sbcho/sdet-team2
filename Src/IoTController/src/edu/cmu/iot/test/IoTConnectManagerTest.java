@@ -64,17 +64,20 @@ public class IoTConnectManagerTest {
         IoTConnection conn = partialMockBuilder(IoTConnection.class)
                 .addMockedMethod("sendMessageToHouse", String.class).createMock();
 
-        // Humidity/Heater/Chiller sensor (HUS) enable
+        // All sensor disable Humidity/Heater/Chiller sensor (HUS)
         expect(conn.sendMessageToHouse(IoTValues.GET_STATE + IoTValues.MSG_END))
                 .andReturn("SU:TR=71;HR=51;DS=0;LS=0;PS=0;AS=0;HUS=0;CHS=0;HM=0;HES=0" + IoTValues.MSG_END);
-        // Humidity/Heater/Chiller sensor (HUS) disable
+        // All sensor enable including Humidity/Heater/Chiller sensor (HUS)
         expect(conn.sendMessageToHouse(IoTValues.GET_STATE + IoTValues.MSG_END))
                 .andReturn("SU:TR=71;HR=51;DS=1;LS=1;PS=1;AS=1;HUS=1;CHS=1;HES=1;HM=1;VS=2" + IoTValues.MSG_END);
+
+        // To meet branch full coverage
         expect(conn.sendMessageToHouse(IoTValues.GET_STATE + IoTValues.MSG_END))
                 .andReturn("SU:DS=0;TR=32;HR=2;LS=0;AS=0;PS=0" + IoTValues.MSG_END);
         expect(conn.sendMessageToHouse(IoTValues.GET_STATE + IoTValues.MSG_END))
                 .andReturn("SU:DS=1;TR=0;HR=0;LS=1;AS=1;PS=1" + IoTValues.MSG_END);
 
+        // Invalid cases
         expect(conn.sendMessageToHouse(IoTValues.GET_STATE + IoTValues.MSG_END))
                 .andReturn(null);
         expect(conn.sendMessageToHouse(IoTValues.GET_STATE + IoTValues.MSG_END))
@@ -127,14 +130,14 @@ public class IoTConnectManagerTest {
         IoTConnection conn = partialMockBuilder(IoTConnection.class)
                 .addMockedMethod("sendMessageToHouse", String.class).createMock();
 
+        // enable all sensor
         expect(conn.sendMessageToHouse("SS:CHS=0;AS=0;LS=0;HUS=0;HES=0;DS=0;PS=0" + IoTValues.MSG_END))
                 .andReturn(IoTValues.OK);
+        // disable all sensor
         expect(conn.sendMessageToHouse("SS:CHS=1;AS=1;LS=1;HUS=1;HES=1;DS=1;PS=1" + IoTValues.MSG_END))
                 .andReturn(IoTValues.OK);
-        expect(conn.sendMessageToHouse("SS:CHS=1;AS=1;LS=0;HUS=0;HES=0;DS=0;PS=1" + IoTValues.MSG_END))
-                .andReturn(null);
-        expect(conn.sendMessageToHouse("SS:CHS=1;AS=1;LS=0;HUS=0;DS=0;HES=0;PS=1;" + IoTValues.MSG_END))
-                .andReturn(null);
+
+        // to meet branch full coverage
         expect(conn.sendMessageToHouse("SS:DS=0" + IoTValues.MSG_END))
                 .andReturn(null);
         expect(conn.sendMessageToHouse("SS:AS=0" + IoTValues.MSG_END))
@@ -148,6 +151,10 @@ public class IoTConnectManagerTest {
         expect(conn.sendMessageToHouse("SS:HUS=0" + IoTValues.MSG_END))
                 .andReturn(null);
         expect(conn.sendMessageToHouse("SS:CHS=0" + IoTValues.MSG_END))
+                .andReturn(null);
+
+        // to meet branch full coverage but looks invalid
+        expect(conn.sendMessageToHouse("SS:PS=1;" + IoTValues.MSG_END))
                 .andReturn(null);
 
         replay(conn);
@@ -164,7 +171,6 @@ public class IoTConnectManagerTest {
         state.put("AS", false);
         state.put("CHS", false);
         state.put("HES", false);
-
         assertEquals(true, mngr.setState(state));
 
         mngr = new IoTConnectManager(conn);
@@ -176,32 +182,7 @@ public class IoTConnectManagerTest {
         state.put("AS", true);
         state.put("CHS", true);
         state.put("HES", true);
-
         assertEquals(true, mngr.setState(state));
-
-        mngr = new IoTConnectManager(conn);
-        state = new Hashtable<String, Object>();
-        state.put("HUS", false);
-        state.put("DS", false);
-        state.put("LS", false);
-        state.put("PS", true);
-        state.put("AS", true);
-        state.put("CHS", true);
-        state.put("HES", false);
-
-        assertEquals(false, mngr.setState(state));
-
-        mngr = new IoTConnectManager(conn);
-        state = new Hashtable<String, Object>();
-        state.put("HUS", false);
-        state.put("LS", false);
-        state.put("PS", true);
-        state.put("AS", true);
-        state.put("CHS", true);
-        state.put("HES", false);
-        state.put("VS", false);
-        state.put("DS", false);
-        assertEquals(false, mngr.setState(state));
 
         mngr = new IoTConnectManager(conn);
         state = new Hashtable<String, Object>();
@@ -236,6 +217,12 @@ public class IoTConnectManagerTest {
         mngr = new IoTConnectManager(conn);
         state = new Hashtable<String, Object>();
         state.put("CHS", false);
+        assertEquals(false, mngr.setState(state));
+
+        mngr = new IoTConnectManager(conn);
+        state = new Hashtable<String, Object>();
+        state.put("PS", true);
+        state.put("VS", false);
         assertEquals(false, mngr.setState(state));
 
         verify(conn);
