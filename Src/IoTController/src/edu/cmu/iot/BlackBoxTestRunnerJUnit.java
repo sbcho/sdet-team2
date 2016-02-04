@@ -23,6 +23,19 @@ public class BlackBoxTestRunnerJUnit {
 			System.out.println(failure.toString());
 		}
 
+		result = JUnitCore.runClasses(BlackBoxTest_UserCase_07.class);
+
+		// Report the failures and successses
+		for (Failure failure : result.getFailures()) {
+			System.out.println(failure.toString());
+		}
+		
+		result = JUnitCore.runClasses(BlackBoxTest_UserCase_12.class);
+
+		// Report the failures and successses
+		for (Failure failure : result.getFailures()) {
+			System.out.println(failure.toString());
+		}
 		System.out.println(result.wasSuccessful());
 	}
 
