@@ -40,7 +40,7 @@ public class WhiteBoxTest_IoTControlManagerTest {
 
     @Test
     public void testIoTControlManager() {
-        String settingsPath = "d:\\";
+        String settingsPath = "D:\\Tmp";
         IoTControlManager icm = new IoTControlManager(null, settingsPath);
         assertNotNull( 		icm.getLogMessages() );
         assertNotNull(icm.getUserSettings());
@@ -51,7 +51,7 @@ public class WhiteBoxTest_IoTControlManagerTest {
 
     @Test
     public void testLoadUsers() {
-        String settingsPath = "d:\\";
+        String settingsPath = "D:\\Tmp";
         IoTControlManager icm = new IoTControlManager(null, settingsPath);
         Vector<UserLoginInfo> users = new Vector<UserLoginInfo>();
         try {
@@ -83,7 +83,7 @@ public class WhiteBoxTest_IoTControlManagerTest {
 
     @Test
     public void testLoadSettings() {
-        String settingsPath = "d:\\";
+        String settingsPath = "D:\\Tmp";
         IoTControlManager icm = new IoTControlManager(null, settingsPath);
         icm.loadSettings();
         assertEquals(8,icm.getUserSettings().get(IoTValues.ALARM_DELAY));
@@ -92,7 +92,7 @@ public class WhiteBoxTest_IoTControlManagerTest {
 
     @Test
     public void testUpdateSettingsWhenSettingisNull() {
-        String settingsPath = "d:\\";
+        String settingsPath = "D:\\Tmp";
         IoTControlManager icm = new IoTControlManager(null, settingsPath);
         //icm.loadSettings();
         Hashtable<String, Object> testSetting = new Hashtable<String, Object>();
@@ -105,7 +105,7 @@ public class WhiteBoxTest_IoTControlManagerTest {
 
     @Test
     public void testUpdateSettingsWhenSettingisNotNull() {
-        String settingsPath = "d:\\";
+        String settingsPath = "D:\\Tmp";
         IoTControlManager icm = new IoTControlManager(null, settingsPath);
         icm.loadSettings();
         assertEquals(8,icm.getUserSettings().get(IoTValues.ALARM_DELAY));
@@ -122,7 +122,7 @@ public class WhiteBoxTest_IoTControlManagerTest {
 
     @Test
     public void testGetUserSettings() {
-        String settingsPath = "d:\\";
+        String settingsPath = "D:\\Tmp";
         IoTControlManager icm = new IoTControlManager(null, settingsPath);
         icm.loadSettings();
         Hashtable<String, Object> testSetting = new Hashtable<String, Object>();
@@ -139,7 +139,7 @@ public class WhiteBoxTest_IoTControlManagerTest {
 		//EasyMock.expect(mock.updateLog("text")).andReturn("");
 		
 		
-		String settingsPath = "d:\\";
+		String settingsPath = "D:\\Tmp";;
 		IoTControlManager icm = new IoTControlManager(null, settingsPath);
 		//icm.addUser("tester", "testee");
 		

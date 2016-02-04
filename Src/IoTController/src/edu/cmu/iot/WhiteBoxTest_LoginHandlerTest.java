@@ -14,7 +14,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class WhiteBoxTest_LoginHandlerTest {
-	private String settingsPath = "C:\\";
+	private String settingsPath = "D:\\tmp\\";
 	private Vector<UserLoginInfo> users = new Vector<UserLoginInfo>();
 
 	@BeforeClass
