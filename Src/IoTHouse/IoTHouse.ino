@@ -278,7 +278,7 @@ String HandleGetState() {
   response += ";";
 
   long pv = ProximityVal(QtiPin);
-  if (pv == 0) {
+  if (pv <= 10) {
     // home
     response += "PS=1";
   } else {
